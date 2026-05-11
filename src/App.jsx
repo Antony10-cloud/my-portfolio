@@ -71,10 +71,11 @@ export default function PortfolioWebsite() {
           <h2 className="text-4xl font-bold mb-8">About Me</h2>
           <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-lg">
             <p className="text-slate-300 text-lg leading-relaxed">
-              I am an aspiring Data Analyst currently building my skills in
-              Excel, SQL, Python, and Power BI through ALX. I enjoy solving
-              real-world problems using data and creating insights that improve
-              decision-making.
+              I am an aspiring Data Analyst currently building my skills in Excel, SQL,
+              Python, Power BI, and Tableau through ALX. I am also an ALX Certified
+              Virtual Assistant, with training in communication, calendar management,
+              research, and productivity tools. I enjoy solving real-world problems using
+              data and creating insights that help businesses make smarter decisions.
             </p>
           </div>
         </div>
