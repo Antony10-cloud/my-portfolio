@@ -80,34 +80,48 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="px-8 md:px-20 py-24">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8">Featured Projects</h2>
+{/* Projects Section */}
+<section id="projects" className="px-8 md:px-20 py-24">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-4xl font-bold mb-8">Featured Projects</h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-lg hover:border-cyan-400 transition">
-              <h3 className="text-2xl font-semibold mb-3">
-                Sales Dashboard in Power BI
-              </h3>
-              <p className="text-slate-300 leading-relaxed">
-                Built an interactive dashboard to analyze revenue trends,
-                customer behavior, and regional performance.
-              </p>
-            </div>
+    <div className="grid md:grid-cols-2 gap-8">
+      {/* Tableau Project */}
+      <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-lg hover:border-cyan-400 transition">
+        <h3 className="text-2xl font-semibold mb-3">
+          Airbnb Market Analysis Dashboard
+        </h3>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-lg hover:border-cyan-400 transition">
-              <h3 className="text-2xl font-semibold mb-3">
-                SQL Customer Analysis
-              </h3>
-              <p className="text-slate-300 leading-relaxed">
-                Used SQL queries to uncover insights on customer retention,
-                purchasing patterns, and churn risk.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <p className="text-slate-300 leading-relaxed mb-4">
+          Built an interactive Tableau dashboard analyzing Airbnb listings,
+          pricing trends, and revenue opportunities to help hosts and investors
+          identify the most profitable neighborhoods.
+        </p>
+
+        <a
+          href="https://public.tableau.com/views/AirBnBProject_17721908016270/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block bg-cyan-500 hover:bg-cyan-400 transition px-5 py-2 rounded-xl font-medium"
+        >
+          View Dashboard
+        </a>
+      </div>
+
+      {/* SQL Project */}
+      <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-lg hover:border-cyan-400 transition">
+        <h3 className="text-2xl font-semibold mb-3">
+          SQL Customer Analysis
+        </h3>
+
+        <p className="text-slate-300 leading-relaxed">
+          Used SQL queries to uncover insights on customer retention,
+          purchasing patterns, and churn risk.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
       <section
