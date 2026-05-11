@@ -1,6 +1,20 @@
 import profile from "./assets/profile.png";
 
 export default function PortfolioWebsite() {
+  const scrollToProjects = () => {
+    document.getElementById("projects")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
+  const scrollToContact = () => {
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-white font-sans">
       {/* Hero Section */}
@@ -22,19 +36,19 @@ export default function PortfolioWebsite() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="bg-cyan-500 hover:bg-cyan-400 transition px-6 py-3 rounded-2xl font-medium"
+              <button
+                onClick={scrollToProjects}
+                className="bg-cyan-500 hover:bg-cyan-400 transition px-6 py-3 rounded-2xl font-medium shadow-lg"
               >
                 View Projects
-              </a>
+              </button>
 
-              <a
-                href="#contact"
+              <button
+                onClick={scrollToContact}
                 className="border border-slate-600 hover:border-cyan-400 transition px-6 py-3 rounded-2xl font-medium"
               >
                 Contact Me
-              </a>
+              </button>
             </div>
           </div>
 
@@ -52,7 +66,7 @@ export default function PortfolioWebsite() {
       </section>
 
       {/* About Section */}
-      <section className="px-8 md:px-20 py-20">
+      <section id="about" className="px-8 md:px-20 py-20">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-8">About Me</h2>
           <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-lg">
@@ -66,17 +80,52 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
+      {/* Spacer to make scrolling more obvious */}
+      <div className="h-16"></div>
+
+      {/* Projects Section */}
+      <section id="projects" className="px-8 md:px-20 py-24">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold mb-8">Featured Projects</h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-lg hover:border-cyan-400 transition">
+              <h3 className="text-2xl font-semibold mb-3">
+                Sales Dashboard in Power BI
+              </h3>
+              <p className="text-slate-300 leading-relaxed">
+                Built an interactive dashboard to analyze revenue trends,
+                customer behavior, and regional performance.
+              </p>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-lg hover:border-cyan-400 transition">
+              <h3 className="text-2xl font-semibold mb-3">
+                SQL Customer Analysis
+              </h3>
+              <p className="text-slate-300 leading-relaxed">
+                Used SQL queries to uncover insights on customer retention,
+                purchasing patterns, and churn risk.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="px-8 md:px-20 py-20 text-center">
+      <section
+        id="contact"
+        className="px-8 md:px-20 py-20 text-center bg-slate-900"
+      >
         <h2 className="text-4xl font-bold mb-6">Let's Connect</h2>
-        <p className="text-slate-300 mb-8">
+        <p className="text-slate-300 mb-8 text-lg">
           I'm open to internships and entry-level opportunities in Data
           Analytics.
         </p>
 
         <a
-          href="mailto:your.email@example.com"
-          className="bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-2xl font-medium"
+          href="mailto:antonymugo@gmail.com"
+          className="inline-block bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-2xl font-medium shadow-lg"
         >
           Email Me
         </a>
