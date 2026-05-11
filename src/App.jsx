@@ -80,9 +80,6 @@ export default function PortfolioWebsite() {
         </div>
       </section>
 
-      {/* Spacer to make scrolling more obvious */}
-      <div className="h-16"></div>
-
       {/* Projects Section */}
       <section id="projects" className="px-8 md:px-20 py-24">
         <div className="max-w-5xl mx-auto">
@@ -118,18 +115,51 @@ export default function PortfolioWebsite() {
         className="px-8 md:px-20 py-20 text-center bg-slate-900"
       >
         <h2 className="text-4xl font-bold mb-6">Let's Connect</h2>
+
         <p className="text-slate-300 mb-8 text-lg">
           I'm open to internships and entry-level opportunities in Data
           Analytics.
         </p>
 
-        <a
-          href="mailto:antonymugo@gmail.com"
-          className="inline-block bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-2xl font-medium shadow-lg"
-        >
-          Email Me
-        </a>
+        <div className="flex flex-wrap justify-center gap-4">
+          {/* Email Button */}
+          <a
+            href="mailto:antonymugo66@gmail.com"
+            className="inline-block bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-2xl font-medium shadow-lg"
+          >
+            Email Me
+          </a>
+
+          {/* LinkedIn Button - Replace with your actual LinkedIn URL */}
+          <a
+            href="https://www.linkedin.com/in/antonymugo"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block border border-slate-600 hover:border-cyan-400 hover:text-cyan-400 transition px-8 py-4 rounded-2xl font-medium"
+          >
+            LinkedIn
+          </a>
+
+          {/* GitHub Button */}
+          <a
+            href="https://github.com/Antony10-cloud"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block border border-slate-600 hover:border-cyan-400 hover:text-cyan-400 transition px-8 py-4 rounded-2xl font-medium"
+          >
+            GitHub
+          </a>
+        </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-950 border-t border-slate-800 py-6">
+        <div className="max-w-6xl mx-auto px-8 md:px-20 text-center">
+          <p className="text-slate-500 text-sm">
+            © 2026 Antony Mugo. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
