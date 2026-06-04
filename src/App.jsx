@@ -5,7 +5,9 @@ const projects = [
     title: "Stema Piustu Advent Booking System",
     label: "Android app + admin portal",
     summary:
-      "A branded booking product for hikes, private transport, and moving-service requests with WhatsApp booking flow, Google Sheets storage, secure admin login, booking management, and report export.",
+      "A travel and logistics business needed a cleaner way to receive bookings, manage requests, and keep records without losing speed. I turned that problem into a branded customer app and a live admin portal.",
+    outcome:
+      "The result is a practical workflow for hike bookings, private transport, moving-service quotes, WhatsApp handoff, Google Sheets storage, secure admin login, booking management, and report export.",
     tags: ["React", "Android", "Google Sheets", "Vercel"],
     links: [
       {
@@ -24,7 +26,9 @@ const projects = [
     title: "Airbnb Market Analysis Dashboard",
     label: "Tableau dashboard",
     summary:
-      "An interactive Tableau dashboard exploring Airbnb listings, pricing trends, neighborhood patterns, and revenue opportunities for short-term rental decisions.",
+      "Short-term rental data can feel noisy until the right questions are asked. I explored Airbnb listings through pricing, location, and revenue signals to make the market easier to understand.",
+    outcome:
+      "The dashboard helps viewers compare trends, spot revenue opportunities, and move from scattered listings to clearer investment or hosting decisions.",
     tags: ["Tableau", "Data visualization", "Market analysis"],
     links: [
       {
@@ -38,7 +42,9 @@ const projects = [
     title: "SQL Customer Analysis",
     label: "Portfolio build",
     summary:
-      "A developing analysis project using SQL to explore customer retention, purchasing behavior, churn risk, and business questions that support smarter decision-making.",
+      "Customer behavior tells a story before revenue changes show up. This developing SQL project focuses on the patterns behind retention, purchasing behavior, and churn risk.",
+    outcome:
+      "The goal is to turn customer records into business questions leaders can act on: who is staying, who is drifting, and what signals deserve attention.",
     tags: ["SQL", "Customer analytics", "Retention"],
     links: [{ label: "Coming Soon" }],
   },
@@ -63,6 +69,21 @@ const stats = [
   ["3", "Portfolio projects"],
   ["ALX", "Certified VA"],
   ["5+", "Analytics tools"],
+];
+
+const storySteps = [
+  {
+    title: "I start with the messy question.",
+    text: "Every useful project begins with uncertainty: bookings scattered across messages, listings that are hard to compare, or customer records that do not yet explain behavior.",
+  },
+  {
+    title: "Then I organize the moving parts.",
+    text: "I break the problem into data, workflow, user needs, and decisions. That is where analysis and virtual-assistant discipline meet.",
+  },
+  {
+    title: "Finally, I build something people can use.",
+    text: "A dashboard, a portal, a report, or a cleaner process should make the next decision easier for the person using it.",
+  },
 ];
 
 export default function PortfolioWebsite() {
@@ -124,13 +145,13 @@ export default function PortfolioWebsite() {
               </p>
 
               <h1 className="max-w-3xl text-5xl font-bold leading-tight text-white md:text-7xl">
-                I turn raw information into clear business action.
+                I find the signal inside messy business problems.
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-200">
-                I am Antony Mugo, a data analyst and digital solutions builder
-                focused on dashboards, research, workflow tools, and practical
-                systems that help teams work smarter.
+                I am Antony Mugo. I combine data analysis, research, and
+                practical digital tools to help teams understand what is
+                happening, decide what matters, and act with more confidence.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -179,8 +200,8 @@ export default function PortfolioWebsite() {
               </div>
               <div className="mt-4 border border-white/10 bg-white/5 p-4">
                 <p className="text-sm font-semibold text-white">
-                  Available for internships, entry-level data roles, and
-                  practical digital solution projects.
+                  My work sits where data, operations, and real-world business
+                  needs meet.
                 </p>
               </div>
             </div>
@@ -194,23 +215,58 @@ export default function PortfolioWebsite() {
                 About
               </p>
               <h2 className="mt-3 text-4xl font-bold text-white">
-                Curious, practical, and business-minded.
+                From admin discipline to analytical thinking.
               </h2>
             </div>
 
             <div className="border-l border-white/10 pl-6">
               <p className="text-lg leading-8 text-zinc-300">
-                Antony Mugo is an aspiring Data Analyst and ALX Certified
-                Virtual Assistant passionate about using data and technology to
-                solve real-world problems. He is building skills in Excel, SQL,
-                Python, Power BI, Tableau, research, communication, and
-                productivity tools.
+                My path into data started with a simple belief: good decisions
+                need clear information and organized execution. As an ALX
+                Certified Virtual Assistant, I learned how to support work with
+                structure, communication, research, and follow-through.
               </p>
               <p className="mt-5 text-lg leading-8 text-zinc-300">
-                He also builds digital solutions such as booking systems, admin
-                portals, and business workflow tools, with a focus on job
-                creation, tourism, education, and business intelligence.
+                Now I am building that foundation into data analysis. I use
+                Excel, SQL, Python, Power BI, and Tableau to ask better
+                questions, uncover patterns, and create tools that help people
+                move from confusion to action.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-white/10 bg-[#171a1d] px-5 py-20 md:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-wide text-amber-200">
+                How I Think
+              </p>
+              <h2 className="mt-3 text-4xl font-bold">
+                The thread running through my work is clarity.
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-zinc-300">
+                I am not only interested in charts or tools. I care about the
+                moment when a person looks at information and finally knows what
+                to do next.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {storySteps.map((step, index) => (
+                <article
+                  key={step.title}
+                  className="border border-white/10 bg-white/[0.04] p-6"
+                >
+                  <p className="text-sm font-bold text-emerald-300">
+                    0{index + 1}
+                  </p>
+                  <h3 className="mt-5 text-xl font-bold text-white">
+                    {step.title}
+                  </h3>
+                  <p className="mt-4 leading-7 text-zinc-300">{step.text}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -222,11 +278,11 @@ export default function PortfolioWebsite() {
                 <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">
                   Selected Work
                 </p>
-                <h2 className="mt-3 text-4xl font-bold">Projects with proof.</h2>
+                <h2 className="mt-3 text-4xl font-bold">Projects with a before and after.</h2>
               </div>
               <p className="max-w-xl text-zinc-700">
-                A mix of analytics work and practical systems that show how I
-                approach real business problems.
+                Each project starts with a practical problem and ends with a
+                clearer way to understand, manage, or act on it.
               </p>
             </div>
 
@@ -249,6 +305,9 @@ export default function PortfolioWebsite() {
                       {project.title}
                     </h3>
                     <p className="mt-4 leading-7 text-zinc-700">{project.summary}</p>
+                    <p className="mt-4 border-l-2 border-emerald-500 pl-4 leading-7 text-zinc-800">
+                      {project.outcome}
+                    </p>
                   </div>
 
                   <div>
@@ -302,7 +361,7 @@ export default function PortfolioWebsite() {
             <p className="text-sm font-semibold uppercase tracking-wide text-amber-200">
               Toolkit
             </p>
-            <h2 className="mt-3 text-4xl font-bold">Skills that connect analysis and execution.</h2>
+            <h2 className="mt-3 text-4xl font-bold">Skills that connect thinking and execution.</h2>
 
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {skillGroups.map((group) => (
@@ -330,13 +389,13 @@ export default function PortfolioWebsite() {
               <p className="text-sm font-semibold uppercase tracking-wide text-sky-200">
                 Elevator Pitch
               </p>
-              <h2 className="mt-3 text-4xl font-bold">A short intro is coming next.</h2>
+              <h2 className="mt-3 text-4xl font-bold">The next chapter: my voice.</h2>
             </div>
             <div className="border border-dashed border-sky-200/30 bg-sky-200/5 p-8">
               <p className="text-lg leading-8 text-zinc-300">
-                This section will feature a short video introducing my
-                background, my skills, and the value I can bring to employers
-                as an aspiring Data Analyst and digital solutions builder.
+                This section will feature a short video explaining where I am
+                coming from, what I am building toward, and why I care about
+                using data to make work clearer, faster, and more useful.
               </p>
             </div>
           </div>
@@ -380,10 +439,11 @@ export default function PortfolioWebsite() {
               <p className="text-sm font-semibold uppercase tracking-wide text-emerald-950/70">
                 Contact
               </p>
-              <h2 className="mt-3 text-4xl font-bold">Let's build something useful.</h2>
+              <h2 className="mt-3 text-4xl font-bold">Bring me a messy problem.</h2>
               <p className="mt-4 max-w-2xl text-lg leading-8 text-zinc-800">
                 I am open to internships, entry-level data analytics roles,
-                digital solution projects, and professional collaborations.
+                digital solution projects, and professional collaborations
+                where clear thinking and reliable execution matter.
               </p>
             </div>
 
