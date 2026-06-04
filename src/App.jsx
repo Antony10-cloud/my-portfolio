@@ -117,7 +117,7 @@ export default function PortfolioWebsite() {
       <main>
         <section className="relative overflow-hidden border-b border-white/10">
           <div className="absolute inset-0 bg-[linear-gradient(135deg,#101214_0%,#172019_42%,#29251a_100%)]" />
-          <div className="relative mx-auto grid min-h-[calc(100vh-72px)] max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-[1.05fr_0.95fr] md:px-8 md:py-20">
+          <div className="relative mx-auto grid min-h-[calc(100vh-72px)] max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-[1.25fr_0.75fr] md:px-8 md:py-20">
             <div>
               <p className="mb-4 inline-flex border border-emerald-300/30 bg-emerald-300/10 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-emerald-200">
                 Aspiring Data Analyst | ALX Certified Virtual Assistant
@@ -167,9 +167,9 @@ export default function PortfolioWebsite() {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="absolute -left-5 top-8 h-40 w-3 bg-emerald-300" />
-              <div className="absolute -right-4 bottom-12 h-28 w-3 bg-amber-300" />
+            <div className="relative w-full max-w-sm justify-self-center md:justify-self-end">
+              <div className="absolute -left-4 top-8 h-32 w-2 bg-emerald-300" />
+              <div className="absolute -right-3 bottom-12 h-24 w-2 bg-amber-300" />
               <div className="border border-white/15 bg-zinc-950 p-3 shadow-2xl">
                 <img
                   src={profile}
